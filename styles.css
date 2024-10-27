@@ -1,0 +1,91 @@
+/* Styles de base */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto; /* Retire la restriction de hauteur fixe */
+    min-height: 100%; /* Assure que le contenu prend au moins la taille de l'écran */
+    font-family: 'Lexend', sans-serif;
+    overflow-y: auto; /* Permet le défilement vertical */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Section pour la liste des articles */
+  #article-list {
+    background-color: #333;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+  }
+  
+  /* Style pour chaque article dans la liste */
+  .article {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #444;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Section pour afficher un article en détail */
+  #article-detail {
+    width: 100%;
+    min-height: 100vh; /* Assure que la section peut dépasser la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Ajoute un espace autour du contenu */
+    box-sizing: border-box;
+  }
+  
+  /* Contenu de l'article en détail */
+  #article-content {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+    text-align: justify;
+    white-space: pre-wrap; /* Préserve les retours à la ligne du JSON */
+  }
+  
+  
+  .hidden {
+    display: none;
+  }  
+  
+  #backButton {
+    margin-top: 1rem;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url("ys.png"); /* Chemin vers l'image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw; /* Ajuste la largeur en fonction de la taille de la fenêtre */
+    height: 20vw; /* Ajuste la hauteur proportionnellement à la largeur */
+    max-width: 150px; /* Limite la taille maximale */
+    max-height: 150px;
+    text-indent: -9999px; /* Cache le texte */
+    overflow: hidden;
+  }
+  
+  #logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #logo {
+    width: 100px; /* Taille du logo */
+    max-width: 20vw;
+    height: auto;
+  }
+  
